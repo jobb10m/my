@@ -40,7 +40,7 @@
 
         .navMenu h2 {
             font-size: 2rem;
-            margin: 20px 0;
+            margin: 10px 0; /* Reduced margin */
         }
 
         .card {
@@ -141,15 +141,13 @@
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
-           
-        
+            <!-- Add carousel content here -->
         </div>
+        <!-- End of Carousel -->
     </div>
-    <!-- End of Carousel -->
 
     <!-- Restaurant Section -->
     <div class="container">
-        
         <div class="row" id="Menu">
             <div class="col navMenu">
                 <h2 class="text-center">~ Our Menu ~</h2>
@@ -202,5 +200,15 @@
         </div>
     </div>
     <!-- End of Menu -->
+
+    <!-- AOS Initialization -->
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 120,
+            duration: 800,
+            once: true,
+        });
+    </script>
 </body>
 </html>
